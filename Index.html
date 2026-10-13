@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K. Vasuhi | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #121a30;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #79f2c0;
+        }
+
+        header h1 {
+            color: #79f2c0;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #79f2c0;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #172542, #0b1020);
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #79f2c0;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #d0d8eb;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #79f2c0;
+            color: #0b1020;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h2.section-title {
+            color: #79f2c0;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #121a30;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #26324e;
+        }
+
+        .card h3 {
+            color: #9da8ff;
+            margin-bottom: 12px;
+        }
+
+        .card p, .card li {
+            color: #d0d8eb;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #172542;
+            color: #79f2c0;
+            border: 1px solid #79f2c0;
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
+        .marks {
+            font-size: 25px;
+            font-weight: bold;
+            color: #79f2c0;
+        }
+
+        footer {
+            text-align: center;
+            background: #121a30;
+            padding: 25px;
+            color: #d0d8eb;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 35px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>K. Vasuhi</h1>
+        <p>My Personal Portfolio</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Hello, I'm K. Vasuhi</h2>
+        <p>B.Sc. Computer Science Student</p>
+        <p>Aspiring Data Analyst</p>
+        <p>
+            I am learning programming, statistics,
+            problem solving and data analysis.
+        </p>
+        <a href="#projects" class="button">
+            Explore My Work
+        </a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+            <p>
+                I am K. Vasuhi, a B.Sc. Computer Science
+                student at Bishop Heber College,
+                Tiruchirappalli.
+
+                I am interested in programming, data
+                analysis and solving problems. My goal
+                is to become a Data Analyst.
+
+                I am currently developing my technical
+                skills, statistical knowledge and
+                workplace communication skills.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills">
+            <span>Python</span>
+            <span>C Programming</span>
+            <span>Communication</span>
+            <span>Problem Solving</span>
+            <span>Statistical Knowledge</span>
+            <span>Presentation Skills</span>
+            <span>Data Analysis - Learning</span>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>College</h3>
+                <p>B.Sc. Computer Science</p>
+                <p>Bishop Heber College</p>
+                <p>Batch: 2026-2027</p>
+            </div>
+
+            <div class="card">
+                <h3>12th Standard</h3>
+                <p class="marks">544 / 600</p>
+                <p>Higher Secondary Education</p>
+            </div>
+
+            <div class="card">
+                <h3>10th Standard</h3>
+                <p class="marks">489 / 500</p>
+                <p>SSLC Education</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">
+            Projects & Presentations
+        </h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Supermarket Billing System</h3>
+                <p><b>Technology:</b> C Programming</p>
+                <p>
+                    An academic project based on a
+                    supermarket billing process. It
+                    helped me practise programming
+                    logic and problem solving.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Population Explosion</h3>
+                <p><b>Subject:</b> Environmental Studies</p>
+                <p>
+                    Presented a poster about population
+                    explosion, its effects and
+                    environmental awareness.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Merge Sort</h3>
+                <p><b>Subject:</b> Data Structures</p>
+                <p>
+                    Presented a seminar explaining
+                    the Merge Sort algorithm and
+                    how it sorts elements by dividing
+                    and merging smaller lists.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="goal">
+        <h2 class="section-title">Career Goal</h2>
+
+        <div class="card">
+            <h3>My Dream: Data Analyst</h3>
+            <p>
+                My goal is to become a Data Analyst.
+                I plan to improve my Python, statistics,
+                SQL, spreadsheets and data visualisation
+                skills to analyse data and discover
+                meaningful insights.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="card">
+            <p>
+                Thank you for visiting my portfolio!
+            </p>
+            <p>
+                Email: Add your email address here.
+            </p>
+            <p>
+                LinkedIn: Add your LinkedIn profile here.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 K. Vasuhi |
+            Student Portfolio
+        </p>
+    </footer>
+
+</body>
+</html>
